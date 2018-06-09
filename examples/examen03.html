@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic Example</title>
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../prettify.css" rel="stylesheet">
+  </head>
+  <body style="background-image: url('http://conecta-mexico.com/Toxico/examples/hexellence.png')">>
+    <div class='container'>
+
+			<section id="wizard">
+			  <div class="page-header">
+	            <h1>Cuestionario de Toxicidad</h1>
+				  <h3>Sintomas Medicos</h3>
+	          </div>
+
+				<div id="rootwizard">
+					<div class="navbar">
+					  <div class="navbar-inner">
+					    <div class="container">
+							<form action="salida.php" method="post">
+					<ul>
+						<li><a href="#tab0" data-toggle="tab"><span class="label">0</span> Inicio</a></li>
+					<li><a href="#tab1" data-toggle="tab"><span class="label">1</span> Cabeza</a></li>
+						<li><a href="#tab2" data-toggle="tab"><span class="label">2</span> Ojos</a></li>
+						<li><a href="#tab3" data-toggle="tab"><span class="label">3</span> Oidos</a></li>
+						<li><a href="#tab4" data-toggle="tab"><span class="label">4</span> Nariz</a></li>
+						<li><a href="#tab5" data-toggle="tab"><span class="label">5</span> Boca y Garganta</a></li>
+						<li><a href="#tab6" data-toggle="tab"><span class="label">6</span> Piel</a></li>
+						<li><a href="#tab7" data-toggle="tab"><span class="label">7</span> Corazon</a></li>
+						<li><a href="#tab8" data-toggle="tab"><span class="label">8</span> Pulmones</a></li>
+						<li><a href="#tab9" data-toggle="tab"><span class="label">9</span> Tracto Digestivo</a></li>
+						<li><a href="#tab10" data-toggle="tab"><span class="label">10</span> Musculos y Articulaciones</a></li>
+						<li><a href="#tab11" data-toggle="tab"><span class="label">11</span> Peso</a></li>
+						<li><a href="#tab12" data-toggle="tab"><span class="label">12</span> Energia</a></li>
+						<li><a href="#tab13" data-toggle="tab"><span class="label">13</span> Mente</a></li>
+						<li><a href="#tab14" data-toggle="tab"><span class="label">14</span> Emociones</a></li>
+						<li><a href="#tab15" data-toggle="tab"><span class="label">15</span> Otros</a></li>
+					</ul>
+					 </div>
+					  </div>
+					</div>
+					<div class="tab-content">
+					    <div class="tab-pane" id="tab0">
+					     Nombre:  <input type="text" name="nombre"  placeholder="Nombre"></br>
+						</br>
+						 Apellidos:<input type="text" name="apellido"  placeholder="Apellidos"></br>
+					</br>
+					 <p>Califica cada uno de los siguientes sintomas basado en tu condicion de salud:</p> 
+							<select name="tiempo">
+							 <option value="Mes Pasado">Mes Pasado</option>
+						     <option value="La Semana Pasada">La Semana Pasada</option>
+					 		 <option value="Ultimas 48 Horas">Ultimas 48 Horas</option>
+						</select>
+						
+					    </div>
+		
+<div class="tab-pane" id="tab1">
+Dolor de Cabeza <br>
+<input type="checkbox" name="cabeza1" value="1"> 1 
+<input type="checkbox" name="cabeza1" value="2"> 2 
+<input type="checkbox" name="cabeza1" value="3"> 3 
+<input type="checkbox" name="cabeza1" value="4"> 4
+<br><br>
+Desfallecimiento <br>
+<input type="checkbox" name="cabeza2" value="1"> 1
+<input type="checkbox" name="cabeza2" value="2"> 2 
+<input type="checkbox" name="cabeza2" value="3"> 3 
+<input type="checkbox" name="cabeza2" value="4"> 4
+<br><br>	
+Mareos<br> 
+<input type="checkbox" name="cabeza3" value="1"> 1 
+<input type="checkbox" name="cabeza3" value="2"> 2 
+<input type="checkbox" name="cabeza3" value="3"> 3 
+<input type="checkbox" name="cabeza3" value="4"> 4
+<br><br>
+Insomnio <br>
+<input type="checkbox" name="cabeza4" value="1"> 1 
+<input type="checkbox" name="cabeza4" value="2"> 2 
+<input type="checkbox" name="cabeza4" value="3"> 3 
+<input type="checkbox" name="cabeza4" value="4"> 4
+							
+
+							
+</div>
+
+<div class="tab-pane" id="tab2">
+Ojos Llorosos o con Picazon <br>
+<input type="checkbox" name="ojos1" value="1"> 1 
+<input type="checkbox" name="ojos1" value="2"> 2 
+<input type="checkbox" name="ojos1" value="3"> 3 
+<input type="checkbox" name="ojos1" value="4"> 4
+<br><br>
+Parpados Hinchados, enrojecidos o pegajosos<br>
+<input type="checkbox" name="ojos2" value="1"> 1
+<input type="checkbox" name="ojos2" value="2"> 2 
+<input type="checkbox" name="ojos2" value="3"> 3 
+<input type="checkbox" name="ojos2" value="4"> 4
+<br><br>	
+Ojeras o bolsas debajo de los ojos<br>
+<input type="checkbox" name="ojos3" value="1"> 1 
+<input type="checkbox" name="ojos3" value="2"> 2 
+<input type="checkbox" name="ojos3" value="3"> 3 
+<input type="checkbox" name="ojos3" value="4"> 4
+<br><br>
+Vision Borrosa o vision periferica restringida<br>
+<input type="checkbox" name="ojos4" value="1"> 1 
+<input type="checkbox" name="ojos4" value="2"> 2 
+<input type="checkbox" name="ojos4" value="3"> 3 
+<input type="checkbox" name="ojos4" value="4"> 4
+</div>
+					
+	
+<div class="tab-pane" id="tab3">
+Picazon en los oidos <br>
+<input type="checkbox" name="oidos1" value="1"> 1 
+<input type="checkbox" name="oidos1" value="2"> 2 
+<input type="checkbox" name="oidos1" value="3"> 3 
+<input type="checkbox" name="oidos1" value="4"> 4
+<br><br>
+Dolor o infeccion<br>
+<input type="checkbox" name="oidos2" value="1"> 1
+<input type="checkbox" name="oidos2" value="2"> 2 
+<input type="checkbox" name="oidos2" value="3"> 3 
+<input type="checkbox" name="oidos2" value="4"> 4
+<br><br>	
+Drenaje del oido (Sangrado, pus, cerumen,luquido)<br>
+<input type="checkbox" name="oidos3" value="1"> 1 
+<input type="checkbox" name="oidos3" value="2"> 2 
+<input type="checkbox" name="oidos3" value="3"> 3 
+<input type="checkbox" name="oidos3" value="4"> 4
+<br><br>
+Zumbido en los oidos, perdida de la audicion<br>
+<input type="checkbox" name="oidos4" value="1"> 1 
+<input type="checkbox" name="oidos4" value="2"> 2 
+<input type="checkbox" name="oidos4" value="3"> 3 
+<input type="checkbox" name="oidos4" value="4"> 4	
+</div>
+						
+<div class="tab-pane" id="tab4">
+Nariz Congestionada <br>
+<input type="checkbox" name="nariz1" value="1"> 1 
+<input type="checkbox" name="nariz1" value="2"> 2 
+<input type="checkbox" name="nariz1" value="3"> 3 
+<input type="checkbox" name="nariz1" value="4"> 4
+<br><br>
+Problemas de senos<br>
+<input type="checkbox" name="nariz2" value="1"> 1
+<input type="checkbox" name="nariz2" value="2"> 2 
+<input type="checkbox" name="nariz2" value="3"> 3 
+<input type="checkbox" name="nariz2" value="4"> 4
+<br><br>	
+Fiebre del Heno<br>
+<input type="checkbox" name="nariz3" value="1"> 1 
+<input type="checkbox" name="nariz3" value="2"> 2 
+<input type="checkbox" name="nariz3" value="3"> 3 
+<input type="checkbox" name="nariz3" value="4"> 4
+<br><br>
+Ataques de estornudos<br>
+<input type="checkbox" name="nariz4" value="1"> 1 
+<input type="checkbox" name="nariz4" value="2"> 2 
+<input type="checkbox" name="nariz4" value="3"> 3 
+<input type="checkbox" name="nariz4" value="4"> 4
+<br><br>
+Mucosidad Excesiva<br>
+<input type="checkbox" name="nariz5" value="1"> 1 
+<input type="checkbox" name="nariz5" value="2"> 2 
+<input type="checkbox" name="nariz5" value="3"> 3 
+<input type="checkbox" name="nariz5" value="4"> 4
+</div>
+
+<div class="tab-pane" id="tab5">
+Tos Cronica <br>
+<input type="checkbox" name="boga1" value="1"> 1 
+<input type="checkbox" name="boga1" value="2"> 2 
+<input type="checkbox" name="boga1" value="3"> 3 
+<input type="checkbox" name="boga1" value="4"> 4
+<br><br>
+Carraspeo, necesidad de limpiar garganta<br>
+<input type="checkbox" name="boga2" value="1"> 1
+<input type="checkbox" name="boga2" value="2"> 2 
+<input type="checkbox" name="boga2" value="3"> 3 
+<input type="checkbox" name="boga2" value="4"> 4
+<br><br>	
+Irritacion de garganta, ronquera, perdida de voz.<br>
+<input type="checkbox" name="boga3" value="1"> 1 
+<input type="checkbox" name="boga3" value="2"> 2 
+<input type="checkbox" name="boga3" value="3"> 3 
+<input type="checkbox" name="boga3" value="4"> 4
+<br><br>
+Lengua, encias y labios inflamados o palidos<br>
+<input type="checkbox" name="boga4" value="1"> 1 
+<input type="checkbox" name="boga4" value="2"> 2 
+<input type="checkbox" name="boga4" value="3"> 3 
+<input type="checkbox" name="boga4" value="4"> 4
+<br><br>
+Aftas<br>
+<input type="checkbox" name="boga5" value="1"> 1 
+<input type="checkbox" name="boga5" value="2"> 2 
+<input type="checkbox" name="boga5" value="3"> 3 
+<input type="checkbox" name="boga5" value="4"> 4
+</div>
+
+<div class="tab-pane" id="tab6">
+Acne <br>
+<input type="checkbox" name="piel1" value="1"> 1 
+<input type="checkbox" name="piel1" value="2"> 2 
+<input type="checkbox" name="piel1" value="3"> 3 
+<input type="checkbox" name="piel1" value="4"> 4
+<br><br>
+Urticaria, erupciones, piel reseca.<br>
+<input type="checkbox" name="piel2" value="1"> 1
+<input type="checkbox" name="piel2" value="2"> 2 
+<input type="checkbox" name="piel2" value="3"> 3 
+<input type="checkbox" name="piel2" value="4"> 4
+<br><br>	
+Perdida de Cabello<br>
+<input type="checkbox" name="piel3" value="1"> 1 
+<input type="checkbox" name="piel3" value="2"> 2 
+<input type="checkbox" name="piel3" value="3"> 3 
+<input type="checkbox" name="piel3" value="4"> 4
+<br><br>
+Enrojecimiento de cara o cuello, bochornos<br>
+<input type="checkbox" name="piel4" value="1"> 1 
+<input type="checkbox" name="piel4" value="2"> 2 
+<input type="checkbox" name="piel4" value="3"> 3 
+<input type="checkbox" name="piel4" value="4"> 4
+<br><br>
+Transpiracion excesiva<br>
+<input type="checkbox" name="piel5" value="1"> 1 
+<input type="checkbox" name="piel5" value="2"> 2 
+<input type="checkbox" name="piel5" value="3"> 3 
+<input type="checkbox" name="piel5" value="4"> 4					
+</div>
+
+<div class="tab-pane" id="tab7">
+Dolor de pecho<br>
+<input type="checkbox" name="corazon1" value="1"> 1 
+<input type="checkbox" name="corazon1" value="2"> 2 
+<input type="checkbox" name="corazon1" value="3"> 3 
+<input type="checkbox" name="corazon1" value="4"> 4
+<br><br>
+Palpitaciones irregulares<br>
+<input type="checkbox" name="corazon2" value="1"> 1 
+<input type="checkbox" name="corazon2" value="2"> 2 
+<input type="checkbox" name="corazon2" value="3"> 3 
+<input type="checkbox" name="corazon2" value="4"> 4
+<br><br>
+Palpitaciones rapidas o fuertes<br>
+<input type="checkbox" name="corazon3" value="1"> 1 
+<input type="checkbox" name="corazon3" value="2"> 2 
+<input type="checkbox" name="corazon3" value="3"> 3 
+<input type="checkbox" name="corazon3" value="4"> 4
+</div>
+
+<div class="tab-pane" id="tab8">
+Congestion en el pecho<br>
+<input type="checkbox" name="pulmones1" value="1"> 1
+<input type="checkbox" name="pulmones1" value="2"> 2 
+<input type="checkbox" name="pulmones1" value="3"> 3 
+<input type="checkbox" name="pulmones1" value="4"> 4
+<br><br>	
+Asma, Bronquitis<br>
+<input type="checkbox" name="pulmones2" value="1"> 1 
+<input type="checkbox" name="pulmones2" value="2"> 2 
+<input type="checkbox" name="pulmones2" value="3"> 3 
+<input type="checkbox" name="pulmones2" value="4"> 4
+<br><br>
+Falta de aliento<br>
+<input type="checkbox" name="pulmones3" value="1"> 1 
+<input type="checkbox" name="pulmones3" value="2"> 2 
+<input type="checkbox" name="pulmones3" value="3"> 3 
+<input type="checkbox" name="pulmones3" value="4"> 4
+<br><br>
+Dificultad para respirar<br>
+<input type="checkbox" name="pulmones4" value="1"> 1 
+<input type="checkbox" name="pulmones4" value="2"> 2 
+<input type="checkbox" name="pulmones4" value="3"> 3 
+<input type="checkbox" name="pulmones4" value="4"> 4
+</div>
+		  
+<div class="tab-pane" id="tab9">
+Congestion en el pecho<br>
+<input type="checkbox" name="tracto1" value="1"> 1
+<input type="checkbox" name="tracto1" value="2"> 2 
+<input type="checkbox" name="tracto1" value="3"> 3 
+<input type="checkbox" name="tracto1" value="4"> 4
+<br><br>	
+Asma, Bronquitis<br>
+<input type="checkbox" name="tracto2" value="1"> 1 
+<input type="checkbox" name="tracto2" value="2"> 2 
+<input type="checkbox" name="tracto2" value="3"> 3 
+<input type="checkbox" name="tracto2" value="4"> 4
+<br><br>
+Falta de aliento<br>
+<input type="checkbox" name="tracto3" value="1"> 1 
+<input type="checkbox" name="tracto3" value="2"> 2 
+<input type="checkbox" name="tracto3" value="3"> 3 
+<input type="checkbox" name="tracto3" value="4"> 4
+<br><br>
+Dificultad para respirar<br>
+<input type="checkbox" name="tracto4" value="1"> 1 
+<input type="checkbox" name="tracto4" value="2"> 2 
+<input type="checkbox" name="tracto4" value="3"> 3 
+<input type="checkbox" name="tracto4" value="4"> 4
+<br><br>	
+Asma, Bronquitis<br>
+<input type="checkbox" name="tracto5" value="1"> 1 
+<input type="checkbox" name="tracto5" value="2"> 2 
+<input type="checkbox" name="tracto5" value="3"> 3 
+<input type="checkbox" name="tracto5" value="4"> 4
+<br><br>
+Falta de aliento<br>
+<input type="checkbox" name="tracto6" value="1"> 1 
+<input type="checkbox" name="tracto6" value="2"> 2 
+<input type="checkbox" name="tracto6" value="3"> 3 
+<input type="checkbox" name="tracto6" value="4"> 4
+<br><br>
+Dificultad para respirar<br>
+<input type="checkbox" name="tracto7" value="1"> 1 
+<input type="checkbox" name="tracto7" value="2"> 2 
+<input type="checkbox" name="tracto7" value="3"> 3 
+<input type="checkbox" name="tracto7" value="4"> 4
+<br><br>
+Dificultad para respirar<br>
+<input type="checkbox" name="tracto8" value="1"> 1 
+<input type="checkbox" name="tracto8" value="2"> 2 
+<input type="checkbox" name="tracto8" value="3"> 3 
+<input type="checkbox" name="tracto8" value="4"> 4
+</div>
+	    
+<div class="tab-pane" id="tab10">
+Dolor o Molestia en las articulacones<br>
+<input type="checkbox" name="musculos1" value="1"> 1
+<input type="checkbox" name="musculos1" value="2"> 2 
+<input type="checkbox" name="musculos1" value="3"> 3 
+<input type="checkbox" name="musculos1" value="4"> 4
+<br><br>	
+Artritis<br>
+<input type="checkbox" name="musculos2" value="1"> 1 
+<input type="checkbox" name="musculos2" value="2"> 2 
+<input type="checkbox" name="musculos2" value="3"> 3 
+<input type="checkbox" name="musculos2" value="4"> 4
+<br><br>
+Rigidez o limitacion de movimiento<br>
+<input type="checkbox" name="musculos3" value="1"> 1 
+<input type="checkbox" name="musculos3" value="2"> 2 
+<input type="checkbox" name="musculos3" value="3"> 3 
+<input type="checkbox" name="musculos3" value="4"> 4
+<br><br>
+Sensacion de debilidad o fatiga<br>
+<input type="checkbox" name="musculos4" value="1"> 1 
+<input type="checkbox" name="musculos4" value="2"> 2 
+<input type="checkbox" name="musculos4" value="3"> 3 
+<input type="checkbox" name="musculos4" value="4"> 4
+<br><br>	
+Dolor o molestia en los musculos<br>
+<input type="checkbox" name="musculos5" value="1"> 1 
+<input type="checkbox" name="musculos5" value="2"> 2 
+<input type="checkbox" name="musculos5" value="3"> 3 
+<input type="checkbox" name="musculos5" value="4"> 4
+</div>
+	  
+<div class="tab-pane" id="tab11">
+Atracon de comida / bebida<br>
+<input type="checkbox" name="peso1" value="1"> 1
+<input type="checkbox" name="peso1" value="2"> 2 
+<input type="checkbox" name="peso1" value="3"> 3 
+<input type="checkbox" name="peso1" value="4"> 4
+<br><br>	
+Antojos por ciertos alimentos<br>
+<input type="checkbox" name="peso2" value="1"> 1 
+<input type="checkbox" name="peso2" value="2"> 2 
+<input type="checkbox" name="peso2" value="3"> 3 
+<input type="checkbox" name="peso2" value="4"> 4
+<br><br>
+Exceso de peso<br>
+<input type="checkbox" name="peso3" value="1"> 1 
+<input type="checkbox" name="peso3" value="2"> 2 
+<input type="checkbox" name="peso3" value="3"> 3 
+<input type="checkbox" name="peso3" value="4"> 4
+<br><br>
+Retencion de liquidos<br>
+<input type="checkbox" name="peso4" value="1"> 1 
+<input type="checkbox" name="peso4" value="2"> 2 
+<input type="checkbox" name="peso4" value="3"> 3 
+<input type="checkbox" name="peso4" value="4"> 4
+<br><br>	
+Peso bajo<br>
+<input type="checkbox" name="peso5" value="1"> 1 
+<input type="checkbox" name="peso5" value="2"> 2 
+<input type="checkbox" name="peso5" value="3"> 3 
+<input type="checkbox" name="peso5" value="4"> 4
+<br><br>	
+Deseos compulsivos de comer cosas dulces o saladas<br>
+<input type="checkbox" name="peso6" value="1"> 1 
+<input type="checkbox" name="peso6" value="2"> 2 
+<input type="checkbox" name="peso6" value="3"> 3 
+<input type="checkbox" name="peso6" value="4"> 4
+</div>
+  
+<div class="tab-pane" id="tab12">
+Fatiga, pereza<br>
+<input type="checkbox" name="energia1" value="1"> 1
+<input type="checkbox" name="energia1" value="2"> 2 
+<input type="checkbox" name="energia1" value="3"> 3 
+<input type="checkbox" name="energia1" value="4"> 4
+<br><br>	
+Apatia, letargo<br>
+<input type="checkbox" name="energia2" value="1"> 1 
+<input type="checkbox" name="energia2" value="2"> 2 
+<input type="checkbox" name="energia2" value="3"> 3 
+<input type="checkbox" name="energia2" value="4"> 4
+<br><br>
+Hiperactividad<br>
+<input type="checkbox" name="energia3" value="1"> 1 
+<input type="checkbox" name="energia3" value="2"> 2 
+<input type="checkbox" name="energia3" value="3"> 3 
+<input type="checkbox" name="energia3" value="4"> 4
+<br><br>
+Intranquilidad<br>
+<input type="checkbox" name="musculos4" value="1"> 1 
+<input type="checkbox" name="musculos4" value="2"> 2 
+<input type="checkbox" name="musculos4" value="3"> 3 
+<input type="checkbox" name="musculos4" value="4"> 4
+<br><br>	
+</div>
+
+<div class="tab-pane" id="tab13">
+Mala memoria<br>
+<input type="checkbox" name="mente1" value="1"> 1
+<input type="checkbox" name="mente1" value="2"> 2 
+<input type="checkbox" name="mente1" value="3"> 3 
+<input type="checkbox" name="mente1" value="4"> 4
+<br><br>	
+Confusion, difucultad para comprender<br>
+<input type="checkbox" name="mente2" value="1"> 1 
+<input type="checkbox" name="mente2" value="2"> 2 
+<input type="checkbox" name="mente2" value="3"> 3 
+<input type="checkbox" name="mente2" value="4"> 4
+<br><br>
+Dificultad para tomar deciciones<br>
+<input type="checkbox" name="mente3" value="1"> 1 
+<input type="checkbox" name="mente3" value="2"> 2 
+<input type="checkbox" name="mente3" value="3"> 3 
+<input type="checkbox" name="mente3" value="4"> 4
+<br><br>
+Tartamudeo<br>
+<input type="checkbox" name="mente4" value="1"> 1 
+<input type="checkbox" name="mente4" value="2"> 2 
+<input type="checkbox" name="mente4" value="3"> 3 
+<input type="checkbox" name="mente4" value="4"> 4
+<br><br>	
+Arrastra las palabras al hablar<br>
+<input type="checkbox" name="mente5" value="1"> 1 
+<input type="checkbox" name="mente5" value="2"> 2 
+<input type="checkbox" name="mente5" value="3"> 3 
+<input type="checkbox" name="mente5" value="4"> 4
+<br><br>
+Incapacidad para Aprender<br>
+<input type="checkbox" name="mente6" value="1"> 1 
+<input type="checkbox" name="mente6" value="2"> 2 
+<input type="checkbox" name="mente6" value="3"> 3 
+<input type="checkbox" name="mente6" value="4"> 4
+<br><br>
+Falta de concentracion<br>
+<input type="checkbox" name="mente7" value="1"> 1 
+<input type="checkbox" name="mente7" value="2"> 2 
+<input type="checkbox" name="mente7" value="3"> 3 
+<input type="checkbox" name="mente7" value="4"> 4
+<br><br>
+Mala coordinacion fisica<br>
+<input type="checkbox" name="mente8" value="1"> 1 
+<input type="checkbox" name="mente8" value="2"> 2 
+<input type="checkbox" name="mente8" value="3"> 3 
+<input type="checkbox" name="mente8" value="4"> 4
+</div>
+
+<div class="tab-pane" id="tab14">
+Cambios de Humor<br>
+<input type="checkbox" name="emociones1" value="1"> 1
+<input type="checkbox" name="emociones1" value="2"> 2 
+<input type="checkbox" name="emociones1" value="3"> 3 
+<input type="checkbox" name="emociones1" value="4"> 4
+<br><br>	
+Ansiedad, miedo, nervios<br>
+<input type="checkbox" name="emociones2" value="1"> 1 
+<input type="checkbox" name="emociones2" value="2"> 2 
+<input type="checkbox" name="emociones2" value="3"> 3 
+<input type="checkbox" name="emociones2" value="4"> 4
+<br><br>
+Enojo, Irritabilidad, agresividad<br>
+<input type="checkbox" name="emociones3" value="1"> 1 
+<input type="checkbox" name="emociones3" value="2"> 2 
+<input type="checkbox" name="emociones3" value="3"> 3 
+<input type="checkbox" name="emociones3" value="4"> 4
+<br><br>
+Depresion<br>
+<input type="checkbox" name="emociones4" value="1"> 1 
+<input type="checkbox" name="emociones4" value="2"> 2 
+<input type="checkbox" name="emociones4" value="3"> 3 
+<input type="checkbox" name="emociones4" value="4"> 4
+
+</div>
+
+<div class="tab-pane" id="tab15">
+Enfermedades frecuentes<br>
+<input type="checkbox" name="otros1" value="1"> 1
+<input type="checkbox" name="otros1" value="2"> 2 
+<input type="checkbox" name="otros1" value="3"> 3 
+<input type="checkbox" name="otros1" value="4"> 4
+<br><br>	
+Necesidad frecuente o urgente de orinar<br>
+<input type="checkbox" name="otros2" value="1"> 1 
+<input type="checkbox" name="otros2" value="2"> 2 
+<input type="checkbox" name="otros2" value="3"> 3 
+<input type="checkbox" name="otros2" value="4"> 4
+<br><br>
+Picazon o flujo en genitales<br>
+<input type="checkbox" name="otros3" value="1"> 1 
+<input type="checkbox" name="otros3" value="2"> 2 
+<input type="checkbox" name="otros3" value="3"> 3 
+<input type="checkbox" name="otros3" value="4"> 4
+	<input type="submit" value="Enviar">
+	</div>
+		
+</form>
+						<ul class="pager wizard">
+							<li class="previous first" style="display:none;"><a href="#">First</a></li>
+							<li class="previous"><a href="#">Anterior</a></li>
+							<li class="next last" style="display:none;"><a href="#">Last</a></li>
+						  	<li class="next"><a href="#">Siguiente</a></li>
+						</ul>
+					</div>
+				</div>
+
+
+
+
+
+			</section>
+	</div>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script src="../jquery.bootstrap.wizard.js"></script>
+	<script src="../prettify.js"></script>
+	<script>
+	$(document).ready(function() {
+	  	$('#rootwizard').bootstrapWizard({withVisible: false});
+		window.prettyPrint && prettyPrint()
+	});
+	</script>
+<script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+  </body>
+</html>
